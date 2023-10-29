@@ -43,7 +43,7 @@ if __name__ == "__main__":  # Main function
         elif o == 2:    # Menu value two
             if menu_one == 1:   # Menu one should be chosen before menu two
                 try:
-                    print(f"The encoded password is {encoded}, and the original password is ORIGINALPASSWORD.")
+                    print(f"The encoded password is {encoded}, and the original password is {decode(encoded_pass)}.")
                 except ValueError as excpt: # Exception
                     print(excpt)
                     print('Add a new password')
