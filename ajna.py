@@ -14,9 +14,21 @@ def encode(password):  # Function returns encoded password
     encoded_password = ''.join(list)  # List is joined into a string
     return encoded_password  # Encoded password is returned
 
+# decodes inputted password
+def decode(password):
 
-def decode():
-    pass
+    list = []
+
+    # iterates through every chr in the password
+    for i in password:
+
+        # if the chr is a digit 0-9 if not a ValueError is raised
+        if 48 <= ord(i) <= 57:
+            list.append(str(int(i) - 3))
+        else:
+            raise ValueError("Must only contain integers")
+
+    return ''.join(list)
 
 
 if __name__ == "__main__":  # Main function
