@@ -53,7 +53,7 @@ if __name__ == "__main__":  # Main function
 
         elif o == 3:    # Menu option three terminates the program
             break
-        else:   # If menu option doesn't exist, invalid input is printed
+        else:   # If menu option doesn't exist, invalid input is printed out
             print("Invalid input.")
 
         print("\nMenu\n"    # Menu is printed out again
